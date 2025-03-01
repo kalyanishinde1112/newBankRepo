@@ -1,0 +1,75 @@
+.example-card {
+    max-width: 100%;
+    padding: 16px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    background-color: #ffffff; /* White background */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.example-card:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px; /* Reduce padding */
+    height: auto; /* Adjust height automatically based on content */
+    min-height: 80px; /* Set a smaller minimum height */
+    max-width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+    max-width: 600px; /* Increased width for the form field */
+}
+
+mat-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.demo-table {
+    width: 100%;
+}
+
+.demo-button-container {
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.demo-button + .demo-button {
+    margin-left: 8px;
+}
+
+/* Center footer chips */
+.example-card-footer {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    gap: 8px; /* Add spacing between chips */
+    flex-wrap: wrap; /* Prevents overflow */
+    padding: 12px;
+}
+
+mat-chip {
+    background: #96a4b4 !important; /* Blue background */
+    color: white !important; /* White text */
+    font-weight: bold;
+    border-radius: 16px; /* Rounded chips */
+    padding: 6px 12px;
+}
+
+mat-chip:hover {
+    background: #0056b3 !important; /* Darker blue on hover */
+    cursor: pointer;
+}

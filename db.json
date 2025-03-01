@@ -1,0 +1,76 @@
+{
+  "societies": [
+    {
+      "name": "Sub Branch 2",
+      "branchNo": "002",
+      "registrationNo": "REG456",
+      "address": "456 Market Road",
+      "opBalDate": "2024-02-20",
+      "weeklyOff": "Saturday",
+      "cashLimit": 0,
+      "status": "Active",
+      "headOffice": false,
+      "id": "2"
+    },
+    {
+      "name": "sahakari bank",
+      "branchNo": "9878798000",
+      "registrationNo": "98987897",
+      "address": "pune",
+      "opBalDate": "2025-02-22",
+      "weeklyOff": "Thursday",
+      "cashLimit": "989979879",
+      "status": "Active",
+      "headOffice": true,
+      "id": "ae59"
+    },
+    {
+      "id": "b0ad",
+      "name": "pune",
+      "branchNo": "98908",
+      "registrationNo": "798798",
+      "address": "pune",
+      "opBalDate": "2025-02-13",
+      "weeklyOff": "Monday",
+      "cashLimit": "8768",
+      "status": "Active",
+      "headOffice": true
+    },
+    {
+      "id": "d836",
+      "name": "pune",
+      "branchNo": "87878",
+      "registrationNo": "987979",
+      "address": "pune",
+      "opBalDate": "2025-02-14",
+      "weeklyOff": "Monday",
+      "cashLimit": "878979",
+      "status": "Active",
+      "headOffice": true
+    },
+    {
+      "id": "4845",
+      "name": "mumabi",
+      "branchNo": "09090-",
+      "registrationNo": "88",
+      "address": "mumbai",
+      "opBalDate": "2025-03-01",
+      "weeklyOff": "Monday",
+      "cashLimit": "98789",
+      "status": "Active",
+      "headOffice": true
+    },
+    {
+      "id": "39b1",
+      "name": "mumbai",
+      "branchNo": "8u9809",
+      "registrationNo": "890809",
+      "address": "pune",
+      "opBalDate": "2025-02-21",
+      "weeklyOff": "Sunday",
+      "cashLimit": "980989",
+      "status": "Active",
+      "headOffice": true
+    }
+  ]
+}

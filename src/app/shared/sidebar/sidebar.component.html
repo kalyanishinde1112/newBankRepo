@@ -1,0 +1,43 @@
+<!-- <mat-toolbar class="example-header">Header</mat-toolbar> -->
+
+<mat-sidenav-container class="example-container mt-4">
+  <!-- Fixed Sidebar -->
+  
+    <!-- Fixed Sidebar -->
+    <mat-sidenav mode="side" opened class="example-sidenav mt-4  pt-5" fixedInViewport="true">
+      <mat-nav-list class="example-list">
+        <ul class="list-unstyled">
+          <li><a mat-list-item [routerLink]="['/address/state']" routerLinkActive="active">State</a></li>
+    <li><a mat-list-item [routerLink]="['/address/district']" routerLinkActive="active">District</a></li>
+    <li><a mat-list-item [routerLink]="['/address/taluka']" routerLinkActive="active">Taluka</a></li>
+    <li><a mat-list-item [routerLink]="['/address/city']" routerLinkActive="active">City</a></li>
+          
+          <li><a mat-list-item >Location</a></li>
+          <li><a mat-list-item >Religion</a></li>
+          <li><a mat-list-item >Cast</a></li>
+          <li><a mat-list-item >Relation</a></li>
+          <li><a mat-list-item >KYC Documents</a></li>
+          <li><a mat-list-item >Designation</a></li>
+          <li><a mat-list-item >Occupation</a></li>
+          <li><a mat-list-item >Valuator</a></li>
+          <li><a mat-list-item >Head Office</a></li>
+  
+          <li><a mat-list-item >Office</a></li>
+          <li><a mat-list-item >Loan Reason</a></li>
+          <li><a mat-list-item >Client Approval</a></li>
+        </ul>
+      </mat-nav-list>
+    </mat-sidenav>  
+  
+  
+
+  <!-- Main Content -->
+  <mat-sidenav-content>
+    <div class="content">
+      <h2>Dashboard Content</h2>
+      <p>This content is outside the fixed sidebar.</p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <mat-toolbar class="example-footer">Footer</mat-toolbar> -->

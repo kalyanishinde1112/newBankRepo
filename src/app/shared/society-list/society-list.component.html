@@ -1,0 +1,86 @@
+<!-- Branch table -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
+
+<div class="bg-common">
+    <div class="container">
+        <img src="/assets/images/newyork.jpg" class="landscape-image" alt="City Building">
+
+        <div class="container mt-4">
+            <h2 class="mb-3">Society List</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 p-0">
+
+                        <!-- Dropdown for Status Filtering -->
+                        <select class="form-select mb-4" [(ngModel)]="selectedStatus" (change)="filterBranches()">
+                            <option value="">All Status</option>
+                            <option value="Saved">Saved</option>
+                            <option value="Closed">Closed</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Search Input -->
+            <input type="text" [(ngModel)]="searchText" class="form-control mb-2" placeholder="Search for Branch Name."
+                (input)="filterBranches()">
+            <!-- Table -->
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Branch Id</th>
+                        <th>Branch Name</th>
+                        <th>Address</th>
+                        <th>Edit</tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of filteredSocieties | paginate: { itemsPerPage: 5, currentPage: page }">
+                        <td>{{ user.branchNo }}</td>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.address }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row justify-content-center text-center">
+                <pagination-controls (pageChange)="page = $event"></pagination-controls>
+
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-3 mt-2">
+                    <button class="btn btn-info">Details</button>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <button class="btn btn-secondary">Close</button>
+                </div>
+            </div>
+            <!-- Pagination Controls -->
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--  -->

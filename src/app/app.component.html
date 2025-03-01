@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <app-navbar></app-navbar>
+        </div>
+    </div>
+
+    <div class="d-flex" style="margin-top: 56px;">
+        <!-- Sidebar (Fixed) -->
+        <div class="bg-light vh-100 position-fixed" style="width: 250px;">
+            <app-sidebar></app-sidebar>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="flex-grow-1" style="margin-left: 250px; padding: 20px;">
+            <router-outlet></router-outlet>  <!-- Only this updates on navigation -->
+        </div>
+    </div>
+</div>

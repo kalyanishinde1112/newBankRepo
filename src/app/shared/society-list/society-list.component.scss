@@ -1,0 +1,19 @@
+/* Background image covering the screen */
+.landscape-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Sends it to the background */
+  }
+
+/* Ensure the table is visible */
+.container {
+    position: relative;
+    z-index: 1; /* Bring it above the background */
+    background: rgba(255, 255, 255, 0.8); /* Optional: Add a slight white background for readability */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
